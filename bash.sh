@@ -17,6 +17,6 @@ sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
 if sudo systemctl apache2 = active
  echo "Apache2 is running."
-else
+elif
  echo "Apache2 is not running."
 fi
