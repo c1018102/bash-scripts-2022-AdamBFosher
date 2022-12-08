@@ -1,7 +1,7 @@
 #!/bin/sh
 for i in {5..1}
 do
-   echo "Loading: $i "
+   echo "Lamp install loading: $i "
    sleep 1
 done
 
