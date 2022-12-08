@@ -15,7 +15,7 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
-if ! pidof apache2 > /dev/null
+if ! pidof apache2 < /dev/null
 then
   echo "Apache2 Running"
 else
