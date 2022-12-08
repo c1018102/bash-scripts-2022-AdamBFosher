@@ -2,7 +2,7 @@
 for i in {5..1}
 do
    echo "Loading: $i "
-   wait (1)
+   sleep 1
 done
 
 #LAMP INSTALL
