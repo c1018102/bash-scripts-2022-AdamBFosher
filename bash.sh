@@ -1,7 +1,8 @@
 #!/bin/sh
-for i in {1..5}
+for i in {5..1}
 do
-   echo "Number of visits: $i "
+   echo "Loading: $i "
+   wait (1)
 done
 
 #LAMP INSTALL
