@@ -19,3 +19,4 @@ if sudo systemctl apache2 = active
  echo "Apache2 is running."
 else
  echo "Apache2 is not running."
+fi
