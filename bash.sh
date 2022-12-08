@@ -15,9 +15,9 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
-if sudo systemctl status apache2 = active
+if sudo systemctl status apache2 == active
 then
-  STATEMENTS1
+  echo "Apache2 Running"
 else
-  STATEMENTS2
+  echo "Apache2 Not Running"
 fi
