@@ -1,4 +1,10 @@
 #!/bin/sh
+for i in {1..5}
+do
+   echo "Number of visits: $i "
+done
+
+#LAMP INSTALL
 sudo apt update
 sudo apt upgrade -y
 sudo apt install apache2 -y
