@@ -15,7 +15,7 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
-if LAMP == True
+if or i in {5..1} == True
 then
   echo "Apache2 Running"
 else
