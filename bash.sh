@@ -42,6 +42,7 @@ case $app in
   *) echo "Unknown Application!";; 
 esac
 
+
 echo "Enter an installed application"
 read First_string
 echo -e "First application - \n ${First_string}"
