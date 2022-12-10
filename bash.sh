@@ -1,7 +1,17 @@
 #!/bin/sh
+
+echo "Enter password for LAMP install"
+read pass
+if [ $pass="password" ]
+then
+  echo "Password correct - LAMP install initiated"
+else
+  echo "Password incorrect - Please re-enter correct password"
+fi
+
 for i in {5..1}
 do
-   echo "Lamp install loading: $i "
+   echo "LAMP install loading: $i "
    sleep 1
 done
 
@@ -15,9 +25,4 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
-if for i in {5..1} == True
-then
-  echo "Apache2 Running"
-else
-  echo "Apache2 Not Running"
-fi
+
