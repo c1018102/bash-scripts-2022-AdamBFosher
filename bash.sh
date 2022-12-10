@@ -41,3 +41,17 @@ case $app in
   4) echo "MariaDB is installed!";;
   *) echo "Unknown Application!";; 
 esac
+
+echo "Enter an installed application"
+read First_string
+echo -e "First application - \n ${First_string}"
+
+echo "Enter a second installed application"
+read Second_string
+echo -e "Second application - \n ${Second_string}"
+
+# now concatenate both strings by assigning them to third string
+application_string="$First_string$Second_string"
+
+echo -e "\n ${application_string} are working together!"
+echo -e "\n\n\n\n\n"
