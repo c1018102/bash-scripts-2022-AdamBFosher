@@ -26,16 +26,3 @@ sudo mysql_secure_installation
 sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
 
-echo "Application Install Checker"
-echo "1 - Apache2"
-echo "2 - Nginx"
-echo "3 - PHP"
-echo "4 - MariaDB"
-read app;
-case $app in
-  1) echo "Apache2 is installed!";;
-  2) echo "Ngnix is not installed!";;
-  3) echo "PHP is installed!";;
-  4) echo "MariaDB is installed!";;
-  *) echo "Unknown Application!";; 
-esac
