@@ -25,6 +25,8 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
+#Application Check
+echo ""
 echo "Application Install Checker"
 echo "1 - Apache2"
 echo "2 - Nginx"
