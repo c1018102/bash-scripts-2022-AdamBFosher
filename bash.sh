@@ -57,5 +57,5 @@ echo -e "\n ${application_string} are working together!"
 echo -e "\n\n\n\n\n"
 
 cd Documents/LAMP
-echo timedatectl "LAMP install completed and up to date" > status.txt
+echo "LAMP install completed and up to date" > status.txt
 
