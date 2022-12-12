@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo "Enter LAMP for LAMP install to start"
-read lampcode
-if [ $lampcode="LAMP" ]
+echo "Enter LAMP to begin LAMP install"
+read pass
+if [ $pass="LAMP" ]
 then
   echo "LAMP install initiated"
 else
