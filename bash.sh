@@ -58,9 +58,7 @@ echo "Enter a second installed application"
 read Second_string
 echo -e "Second application - \n ${Second_string}"
 
-application_string="$First_string$Second_string"
-
-echo -e "\n ${application_string} are working together!"
+echo -e "\n ${First_string} and ${Second_string} are working together!"
 echo -e "\n"
 
 
