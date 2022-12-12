@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#IF ELSE AND USER INPUT
 echo "Enter LAMP to begin LAMP install"
 read pass
 if [ $pass="LAMP" ]
@@ -9,6 +10,7 @@ else
   echo "Unknown - please try again"
 fi
 
+#LOOP
 for i in {5..1}
 do
    echo "LAMP install loading: $i "
@@ -25,6 +27,7 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
+#WRITE TO FILE
 date >> LAMPINSTALL.txt
 echo "LAMP install completed and up to date" >> LAMPINSTALL.txt
 echo "" >> LAMPINSTALL.txt
@@ -32,8 +35,12 @@ echo "" >> LAMPINSTALL.txt
 echo ""
 echo "LAMPINSTALL Logged"
 
+#EMAIL
+echo "Hello, You're LAMP software on your machine has been installed and updated!" | mail -s "Software Update" "c1018102@hallam.shu.ac.uk"
+echo ""
+echo "Email sent"
 
-#Application Check
+#CASE STATEMENT
 echo ""
 echo "Application Install Checker"
 echo "1 - Apache2"
@@ -49,6 +56,7 @@ case $app in
   *) echo "Unknown Application!";; 
 esac
 
+#COMBINING TWO STRINGS
 echo ""
 echo "Enter an installed application"
 read First_string
@@ -58,7 +66,17 @@ echo "Enter a second installed application"
 read Second_string
 echo -e "Second application - \n ${Second_string}"
 
-echo -e "\n ${First_string} and ${Second_string} are working together!"
+echo "${First_string} and ${Second_string} are working together!"
 echo -e "\n"
 
+#DIRECTORY STRUCTURE
+echo ""
+echo "Showing system directory structure in 5 seconds!"
+sleep 5
+echo ""
+echo "Showing Directory Structure"
+cd
+tree
 
+sleep 3
+echo "Process Finished, Thanks!"
