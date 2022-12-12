@@ -1,1 +1,1 @@
-LAMP install completed and up to date
+date LAMP install completed and up to date
