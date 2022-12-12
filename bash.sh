@@ -56,5 +56,6 @@ application_string="$First_string$Second_string"
 echo -e "\n ${application_string} are working together!"
 echo -e "\n\n\n\n\n"
 
-echo  date "LAMP install completed and up to date" > LAMPINSTALL.txt
-
+echo  date >> LAMPINSTALL.txt
+echo "LAMP install completed and up to date" >> LAMPINSTALL.txt
+echo "LAMPINSTALL Logged"
