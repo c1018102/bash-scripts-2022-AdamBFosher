@@ -1,12 +1,12 @@
 #!/bin/sh
 
-echo "Enter password for LAMP install"
-read pass
-if [ $pass="password" ]
+echo "Enter LAMP for LAMP install to start"
+read lampcode
+if [ $lampcode="LAMP" ]
 then
-  echo "Password correct - LAMP install initiated"
+  echo "LAMP install initiated"
 else
-  echo "Password incorrect - Please re-enter correct password"
+  echo "Unknown - please try again"
 fi
 
 for i in {5..1}
@@ -25,6 +25,13 @@ sudo systemctl status mariadb
 sudo mysql_secure_installation
 sudo apt install php php-mysql php-xml php-mbstring libapache2-mod-php -y
 
+date >> LAMPINSTALL.txt
+echo "LAMP install completed and up to date" >> LAMPINSTALL.txt
+echo "" >> LAMPINSTALL.txt
+
+echo ""
+echo "LAMPINSTALL Logged"
+
 
 #Application Check
 echo ""
@@ -42,7 +49,7 @@ case $app in
   *) echo "Unknown Application!";; 
 esac
 
-
+echo ""
 echo "Enter an installed application"
 read First_string
 echo -e "First application - \n ${First_string}"
@@ -54,8 +61,6 @@ echo -e "Second application - \n ${Second_string}"
 application_string="$First_string$Second_string"
 
 echo -e "\n ${application_string} are working together!"
-echo -e "\n\n\n\n\n"
+echo -e "\n"
 
-date "LAMP install completed and up to date" >> LAMPINSTALL.txt
 
-echo "LAMPINSTALL Logged"
